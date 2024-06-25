@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/runTests.dir/main.cpp.o CMakeFiles/runTests.dir/functions_test.cpp.o CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Pruebas/SumaPunteros/functions.cpp.o -o runTests  lib/libgtest_main.a lib/libgtest.a 

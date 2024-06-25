@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Lista.dir/main.cpp.o CMakeFiles/Lista.dir/ListaSimple.cpp.o -o Lista 

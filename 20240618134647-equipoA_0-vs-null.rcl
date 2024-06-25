@@ -1,0 +1,8 @@
+0,61383	Recv equipoA_1: (init equipoA(version 19))
+0,61383	Recv equipoA_1: (move -51 0)
+0,80456	Recv equipoA_2: (init equipoA(version 19))
+0,99090	Recv equipoA_3: (init equipoA(version 19))
+0,115579	Recv equipoA_4: (init equipoA(version 19))
+0,115648	Recv equipoA_4: (move -42 14)
+0,170232	Recv equipoA_5: (init equipoA(version 19))
+0,170232	Recv equipoA_5: (move -35 28)

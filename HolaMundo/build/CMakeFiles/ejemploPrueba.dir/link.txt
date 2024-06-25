@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ejemploPrueba.dir/holaMundo.cpp.o -o ejemploPrueba 

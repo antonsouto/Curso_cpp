@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Personas.dir/main.cpp.o -o Personas 

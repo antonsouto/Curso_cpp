@@ -1,0 +1,8 @@
+0,187	Recv VodkaJuniorsA_1: (init VodkaJuniorsA(version 19))
+0,187	Recv VodkaJuniorsA_1: (move -51 0)
+0,188	Recv VodkaJuniorsB_1: (init VodkaJuniorsB(version 19))
+0,188	Recv VodkaJuniorsB_1: (move -51 0)
+0,515	Recv VodkaJuniorsA_2: (init VodkaJuniorsA(version 19))
+0,515	Recv VodkaJuniorsA_2: (move -35 -28)
+0,516	Recv VodkaJuniorsB_2: (init VodkaJuniorsB(version 19))
+0,516	Recv VodkaJuniorsB_2: (move -35 -28)
