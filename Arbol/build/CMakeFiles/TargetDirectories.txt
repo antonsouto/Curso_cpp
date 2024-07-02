@@ -1,0 +1,3 @@
+/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/build/CMakeFiles/BinaryTree.dir
+/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/build/CMakeFiles/edit_cache.dir
+/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/build/CMakeFiles/rebuild_cache.dir
