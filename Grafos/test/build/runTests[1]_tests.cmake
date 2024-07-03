@@ -1,0 +1,5 @@
+add_test( [==[AñadonodoUnidireccional.Nodo_añadido_correctamente]==] /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/runTests [==[--gtest_filter=AñadonodoUnidireccional.Nodo_añadido_correctamente]==] --gtest_also_run_disabled_tests)
+set_tests_properties( [==[AñadonodoUnidireccional.Nodo_añadido_correctamente]==] PROPERTIES WORKING_DIRECTORY /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( [==[AñadonodoBidireccional.Nodo_añadido_correctamente]==] /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/runTests [==[--gtest_filter=AñadonodoBidireccional.Nodo_añadido_correctamente]==] --gtest_also_run_disabled_tests)
+set_tests_properties( [==[AñadonodoBidireccional.Nodo_añadido_correctamente]==] PROPERTIES WORKING_DIRECTORY /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( runTests_TESTS [==[AñadonodoUnidireccional.Nodo_añadido_correctamente]==] [==[AñadonodoBidireccional.Nodo_añadido_correctamente]==])

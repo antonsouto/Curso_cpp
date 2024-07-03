@@ -284,29 +284,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-test_bynaryTree.o: test_bynaryTree.cpp.o
-.PHONY : test_bynaryTree.o
+test_binaryTree.o: test_binaryTree.cpp.o
+.PHONY : test_binaryTree.o
 
 # target to build an object file
-test_bynaryTree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_bynaryTree.cpp.o
-.PHONY : test_bynaryTree.cpp.o
+test_binaryTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_binaryTree.cpp.o
+.PHONY : test_binaryTree.cpp.o
 
-test_bynaryTree.i: test_bynaryTree.cpp.i
-.PHONY : test_bynaryTree.i
+test_binaryTree.i: test_binaryTree.cpp.i
+.PHONY : test_binaryTree.i
 
 # target to preprocess a source file
-test_bynaryTree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_bynaryTree.cpp.i
-.PHONY : test_bynaryTree.cpp.i
+test_binaryTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_binaryTree.cpp.i
+.PHONY : test_binaryTree.cpp.i
 
-test_bynaryTree.s: test_bynaryTree.cpp.s
-.PHONY : test_bynaryTree.s
+test_binaryTree.s: test_binaryTree.cpp.s
+.PHONY : test_binaryTree.s
 
 # target to generate assembly for a file
-test_bynaryTree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_bynaryTree.cpp.s
-.PHONY : test_bynaryTree.cpp.s
+test_binaryTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/test_binaryTree.cpp.s
+.PHONY : test_binaryTree.cpp.s
 
 # Help Target
 help:
@@ -332,9 +332,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test_bynaryTree.o"
-	@echo "... test_bynaryTree.i"
-	@echo "... test_bynaryTree.s"
+	@echo "... test_binaryTree.o"
+	@echo "... test_binaryTree.i"
+	@echo "... test_binaryTree.s"
 .PHONY : help
 
 

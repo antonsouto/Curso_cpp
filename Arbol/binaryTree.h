@@ -1,47 +1,68 @@
-#ifndef BINARY_TREE_H
-#define BINARY_TREE_H
+#pragma once
 
+#include <iostream>
 #include <memory>
-#include <cstdlib> // Para rand()
-#include <string>
+#include <functional>
+#include <random>
 
 using namespace std;
 
-// Declaración de la estructura Node
 struct Node;
+
 using P_Node = shared_ptr<Node>;
 
-int uuid();
-
-struct Data{
+struct Data
+{
     int value;
-    string nombre;
-    int id = uuid();
-    
-
-    //Data(int value, const string& nombre2) : value(value), nombre(nombre2) , id(uuid()) {}
+    int id;
+    string name;
 };
 
-struct Node {
+struct Node
+{
     shared_ptr<Data> data;
-    P_Node left;
-    P_Node right;
-
-    
-    //Node(shared_ptr<Data> data) : data(data), left(nullptr), right(nullptr) {}
+    shared_ptr<Node> left;
+    shared_ptr<Node> right;
 };
 
-// Función para insertar un valor en el árbol binario ordenado
-P_Node &Push(P_Node &head, shared_ptr<Data> &data);
 
+template<typename T>
+P_Node push(P_Node &head, shared_ptr<Data> &data, function<T(shared_ptr<Data>)> f)
+{
+    if (!head)
+    {
+        head = make_shared<Node>(Node{data, nullptr, nullptr}); // Esto ocurre en cada hijo que no tiene hijos (se crea un nuevo nodo con el valor data)
+        return head;
+    }
+    if (f(data) < f(head->data))
+    {
+        head->left = push(head->left, data, f);
+        return head;
+    }
+    else
+    {
+        head->right = push(head->right, data, f);
+        return head;
+    }
+}
 
-// Función para insertar un valor en el árbol binario ordenado por el valor
-P_Node &Push2(P_Node &head, shared_ptr<Data> &data);
-
-// Función para encontrar un valor dentro del arbol
-P_Node Find(P_Node const &head, int id);
-
-// Función para encontrar un valor dentro del arbol segun el valor de data
-P_Node Find2(P_Node const &head, int value);
-
-#endif // BINARY_TREE_H
+template<typename T>
+P_Node find(P_Node &head, shared_ptr<Data> &data, function<T(shared_ptr<Data>)> f)
+{
+    if (!head)
+    {
+        return nullptr;
+    }
+    if (f(head->data) == f(data)) // Si soy yo, devuelvo mi cabecera
+    {
+        return head;
+    }
+    if (f(head->data) > f(data)) // Si soy mayor, busco a la izquierda
+    {
+        return find(head->left, data, f);
+    }
+    else // Si soy menor, busco a la derecha
+    {
+        return find(head->right, data, f);
+    }
+}

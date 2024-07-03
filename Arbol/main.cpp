@@ -1,47 +1,97 @@
-#include <memory>
-#include <iostream>
-#include "binaryTree.h"
+#include "arbol.h"
 
-using namespace std;
-
-int main(void)
+int uuid()
 {
-    // Crear dos árboles: uno ordenado por valor y otro por ID
-    shared_ptr<Node> arbolPorValor;
-    shared_ptr<Node> arbolPorId;
+    // Genera un id aleatorio de 4 caracteres
+    return rand() % 10000;
+}
 
-    auto data1 = make_shared<Data>(Data{3, "Anton"});
-    auto data2 = make_shared<Data>(Data{2, "Bartolome"});
-    auto data3 = make_shared<Data>(Data{4, "Carlos"});
-    auto data4 = make_shared<Data>(Data{1, "Dante"});
+struct Aux
+{
+    int value;
+    string name;
+};
 
-    // Insertar datos en ambos árboles
-    arbolPorValor = Push2(arbolPorValor, data1);
-    Push2(arbolPorValor, data2);
-    Push2(arbolPorValor, data3);
-    Push2(arbolPorValor, data4);
+bool operator==(Aux const &a1, Aux const &a2)
+{
+    return (a1.value == a2.value && a1.name == a2.name);
+}
 
-    arbolPorId = Push(arbolPorId, data1);
-    Push(arbolPorId, data2);
-    Push(arbolPorId, data3);
-    Push(arbolPorId, data4);
+bool operator<(Aux const &a1, Aux const &a2)
+{
+    return a1.value < a2.value;
+}
 
-    // Modificar un valor a través del árbol ordenado por ID
-    P_Node nodeToModify = Find(arbolPorId, data3->id);
-    if (nodeToModify) {
-        nodeToModify->data->value = 10; // Modificar el valor
-        cout<<"Nombre: "<<nodeToModify->data->nombre<<"   Value: "<<nodeToModify->data->value<<endl;
-    }
+bool operator>(Aux const &a1, Aux const &a2)
+{
+    return a1.value > a2.value;
+}
 
-    // Buscar la modificación a través del árbol ordenado por valor
-    auto modifiedNode = Find2(arbolPorValor, 10);
-    if (modifiedNode) {
-        cout << "Found node with new value 10" << endl;
-        cout << "ID: " << modifiedNode->data->id << endl;
-        cout << "Nombre: " << modifiedNode->data->nombre << endl;
-    } else {
-        cout << "Node not found with new value 10" << endl;
-    }
+int main()
+{
+    // Crear arbol #1
+    P_Node head = nullptr;
+    Data d1 = {10, uuid(), "Mireia"};
+    shared_ptr<Data> d1_ptr = make_shared<Data>(d1);
+    Data d2 = {5, uuid(), "Roberto"};
+    shared_ptr<Data> d2_ptr = make_shared<Data>(d2);
+    Data d3 = {11, uuid(), "Paula"};
+    shared_ptr<Data> d3_ptr = make_shared<Data>(d3);
+    Data d4 = {6, uuid(), "Pedro"};
+    shared_ptr<Data> d4_ptr = make_shared<Data>(d4);
 
+    push<int>(head, d1_ptr, [](shared_ptr<Data> d) { return d->id; });
+    push<int>(head, d2_ptr, [](shared_ptr<Data> d) { return d->id; });
+    push<int>(head, d3_ptr, [](shared_ptr<Data> d) { return d->id; });
+    push<int>(head, d4_ptr, [](shared_ptr<Data> d) { return d->id; });
+
+    // Crear arbol #2
+    P_Node head2 = nullptr;
+    push<int>(head2, d1_ptr, [](shared_ptr<Data> d) { return d->value; });
+    push<int>(head2, d2_ptr, [](shared_ptr<Data> d) { return d->value; });
+    push<int>(head2, d3_ptr, [](shared_ptr<Data> d) { return d->value; });
+    push<int>(head2, d4_ptr, [](shared_ptr<Data> d) { return d->value; });
+
+    P_Node head3 = nullptr;
+    push<Aux>(head3, d1_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+    push<Aux>(head3, d2_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+    push<Aux>(head3, d3_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+    push<Aux>(head3, d4_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+
+
+
+    cout << "Searching for id: " << d2.id << endl;
+    P_Node found = find<Aux>(head3, d2_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+    // Print the name of the found data struct
+    cout << found->data->name<< endl;
+
+    cout << endl;
+
+    cout << "Changing name of found data struct" << endl;
+    found->data->name = "Robertito";
+    cout << endl;
+
+    cout << "Searching for id: " << d2.id << endl;
+    P_Node found3 = find<Aux>(head3, d2_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
+    // Print the name of the found data struct
+    cout << found3->data->name<< endl;
+
+    /*
+    push(head, 10);
+    push(head, 5);
+    push(head, 11);
+    push(head, 6);
+    */
     return 0;
+
+    // Ordenar y buscar por referencia, mostrar su valor.
+
+    /*
+    head->data = 10;
+    head->left->data = 5;
+    head->right->data = 11;
+    head->left->right->data = 6;
+    head->right->left = nullptr;
+    head->right->right = nullptr;
+    */
 }

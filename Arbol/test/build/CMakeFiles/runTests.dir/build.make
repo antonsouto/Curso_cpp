@@ -83,19 +83,19 @@ CMakeFiles/runTests.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/main.cpp -o CMakeFiles/runTests.dir/main.cpp.s
 
-CMakeFiles/runTests.dir/test_bynaryTree.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/test_bynaryTree.cpp.o: ../test_bynaryTree.cpp
-CMakeFiles/runTests.dir/test_bynaryTree.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/test_bynaryTree.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/test_bynaryTree.cpp.o -MF CMakeFiles/runTests.dir/test_bynaryTree.cpp.o.d -o CMakeFiles/runTests.dir/test_bynaryTree.cpp.o -c /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_bynaryTree.cpp
+CMakeFiles/runTests.dir/test_binaryTree.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/test_binaryTree.cpp.o: ../test_binaryTree.cpp
+CMakeFiles/runTests.dir/test_binaryTree.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/test_binaryTree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/test_binaryTree.cpp.o -MF CMakeFiles/runTests.dir/test_binaryTree.cpp.o.d -o CMakeFiles/runTests.dir/test_binaryTree.cpp.o -c /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_binaryTree.cpp
 
-CMakeFiles/runTests.dir/test_bynaryTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/test_bynaryTree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_bynaryTree.cpp > CMakeFiles/runTests.dir/test_bynaryTree.cpp.i
+CMakeFiles/runTests.dir/test_binaryTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/test_binaryTree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_binaryTree.cpp > CMakeFiles/runTests.dir/test_binaryTree.cpp.i
 
-CMakeFiles/runTests.dir/test_bynaryTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/test_bynaryTree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_bynaryTree.cpp -o CMakeFiles/runTests.dir/test_bynaryTree.cpp.s
+CMakeFiles/runTests.dir/test_binaryTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/test_binaryTree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/test/test_binaryTree.cpp -o CMakeFiles/runTests.dir/test_binaryTree.cpp.s
 
 CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/binaryTree.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/binaryTree.cpp.o: /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/binaryTree.cpp
@@ -114,14 +114,14 @@ CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbo
 # Object files for target runTests
 runTests_OBJECTS = \
 "CMakeFiles/runTests.dir/main.cpp.o" \
-"CMakeFiles/runTests.dir/test_bynaryTree.cpp.o" \
+"CMakeFiles/runTests.dir/test_binaryTree.cpp.o" \
 "CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/binaryTree.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
 runTests: CMakeFiles/runTests.dir/main.cpp.o
-runTests: CMakeFiles/runTests.dir/test_bynaryTree.cpp.o
+runTests: CMakeFiles/runTests.dir/test_binaryTree.cpp.o
 runTests: CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Arbol/binaryTree.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: lib/libgtest.a
