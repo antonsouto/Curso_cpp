@@ -18,16 +18,17 @@ struct Data
     string name;
 };
 
+
 struct Node
 {
     shared_ptr<Data> data;
-    shared_ptr<Node> left;
-    shared_ptr<Node> right;
+    P_Node left;
+    P_Node right;
 };
 
 
 template<typename T>
-P_Node push(P_Node &head, shared_ptr<Data> &data, function<T(shared_ptr<Data>)> f)
+P_Node push(P_Node const &head, shared_ptr<Data> const &data, function<T(shared_ptr<Data>)> f)
 {
     if (!head)
     {

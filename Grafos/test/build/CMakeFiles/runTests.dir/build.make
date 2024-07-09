@@ -97,37 +97,21 @@ CMakeFiles/runTests.dir/Grafo_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/Grafo_test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/Grafo_test.cpp -o CMakeFiles/runTests.dir/Grafo_test.cpp.s
 
-CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o: /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp
-CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o -MF CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o.d -o CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o -c /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp
-
-CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp > CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i
-
-CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp -o CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s
-
 # Object files for target runTests
 runTests_OBJECTS = \
 "CMakeFiles/runTests.dir/main.cpp.o" \
-"CMakeFiles/runTests.dir/Grafo_test.cpp.o" \
-"CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o"
+"CMakeFiles/runTests.dir/Grafo_test.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
 runTests: CMakeFiles/runTests.dir/main.cpp.o
 runTests: CMakeFiles/runTests.dir/Grafo_test.cpp.o
-runTests: CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: lib/libgtest_main.a
 runTests: lib/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable runTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runTests.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -D TEST_TARGET=runTests -D TEST_EXECUTABLE=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/runTests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=runTests_TESTS -D CTEST_FILE=/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/test/build/runTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.22/Modules/GoogleTestAddTests.cmake
 

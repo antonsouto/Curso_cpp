@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../Grafo.cpp"
+#include "../Grafo.hpp"
 
 TEST(AñadonodoUnidireccional, Nodo_añadido_correctamente)
 {
@@ -20,9 +20,14 @@ TEST(AñadonodoUnidireccional, Nodo_añadido_correctamente)
     EXPECT_EQ(n3->neighbors.size(), 0);
     EXPECT_EQ(n4->neighbors.size(), 0);
 
-    EXPECT_EQ(n1->neighbors[0]->data, 2);
-    EXPECT_EQ(n1->neighbors[1]->data, 3);
-    EXPECT_EQ(n2->neighbors[0]->data, 4);
+    // Verificamos los datos de los nodos vecinos
+    auto it = n1->neighbors.begin();
+    EXPECT_EQ((*it)->data, 2);
+    ++it;
+    EXPECT_EQ((*it)->data, 3);
+
+    it = n2->neighbors.begin();
+    EXPECT_EQ((*it)->data, 4);
 }
 
 TEST(AñadonodoBidireccional, Nodo_añadido_correctamente)
@@ -44,10 +49,20 @@ TEST(AñadonodoBidireccional, Nodo_añadido_correctamente)
     EXPECT_EQ(n3->neighbors.size(), 1);
     EXPECT_EQ(n4->neighbors.size(), 1);
 
-    EXPECT_EQ(n1->neighbors[0]->data, 2);
-    EXPECT_EQ(n1->neighbors[1]->data, 3);
-    EXPECT_EQ(n2->neighbors[0]->data, 1);
-    EXPECT_EQ(n2->neighbors[1]->data, 4);
-    EXPECT_EQ(n3->neighbors[0]->data, 1);
-    EXPECT_EQ(n4->neighbors[0]->data, 2);
+    // Verificamos los datos de los nodos vecinos
+    auto it = n1->neighbors.begin();
+    EXPECT_EQ((*it)->data, 2);
+    ++it;
+    EXPECT_EQ((*it)->data, 3);
+
+    it = n2->neighbors.begin();
+    EXPECT_EQ((*it)->data, 1);
+    ++it;
+    EXPECT_EQ((*it)->data, 4);
+
+    it = n3->neighbors.begin();
+    EXPECT_EQ((*it)->data, 1);
+
+    it = n4->neighbors.begin();
+    EXPECT_EQ((*it)->data, 2);
 }

@@ -260,30 +260,6 @@ Grafo_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Grafo_test.cpp.s
 .PHONY : Grafo_test.cpp.s
 
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.o: home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.o
-
-# target to build an object file
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o
-
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.i: home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.i
-
-# target to preprocess a source file
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.i
-
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.s: home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.s
-
-# target to generate assembly for a file
-home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s
-.PHONY : home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -329,9 +305,6 @@ help:
 	@echo "... Grafo_test.o"
 	@echo "... Grafo_test.i"
 	@echo "... Grafo_test.s"
-	@echo "... home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.o"
-	@echo "... home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.i"
-	@echo "... home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

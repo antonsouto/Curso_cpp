@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/runTests.dir/Grafo_test.cpp.o"
   "CMakeFiles/runTests.dir/Grafo_test.cpp.o.d"
-  "CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o"
-  "CMakeFiles/runTests.dir/home/anton/Desktop/Proyecto/Repo_cursocpp/Curso_cpp/Grafos/Grafo.cpp.o.d"
   "CMakeFiles/runTests.dir/main.cpp.o"
   "CMakeFiles/runTests.dir/main.cpp.o.d"
   "runTests"

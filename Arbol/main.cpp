@@ -1,4 +1,4 @@
-#include "arbol.h"
+#include "binaryTree.hpp"
 
 int uuid()
 {
@@ -58,7 +58,7 @@ int main()
     push<Aux>(head3, d3_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
     push<Aux>(head3, d4_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });
 
-
+string
 
     cout << "Searching for id: " << d2.id << endl;
     P_Node found = find<Aux>(head3, d2_ptr, [](shared_ptr<Data> d) { return Aux{d->value, d->name}; });

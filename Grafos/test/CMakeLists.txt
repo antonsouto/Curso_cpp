@@ -23,7 +23,7 @@ enable_testing()
 set(SOURCES
   main.cpp
   Grafo_test.cpp
-  ../Grafo.cpp
+  ../Grafo.hpp
 )
 
 # el main, el test, el archivo que quiero probar
