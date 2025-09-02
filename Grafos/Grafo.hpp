@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <limits>
 #include <utility>
+#include <vector>
 
 using namespace std;
 
